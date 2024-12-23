@@ -1,0 +1,2633 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+/* Apply basic styling to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Set a maximum width for the content to prevent it from becoming too wide on large screens */
+.container {
+    max-width: 1200px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+/* Define styles for mobile screens */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    /* Modify styles for smaller screens */
+    .container {
+        padding: 10px;
+    }
+    /* You can also modify specific elements for smaller screens */
+    .header {
+        font-size: 24px;
+    }
+}
+
+/* Define styles for larger screens (desktop) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Modify styles for larger screens */
+    .container {
+        padding: 50px;
+    }
+    /* You can also modify specific elements for larger screens */
+    .header {
+        font-size: 32px;
+    }
+}
+/* Base styles for both mobile and desktop */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile styles */
+@media screen and (min-width: 200px) and (max-width: 767px)  {
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        font-size: 18px; /* Adjust font size for larger screens */
+    }
+}
+.beg{
+    margin-top: 10px;
+}
+
+/* Common styles for both mobile and desktop */
+nav img {
+    width: 140px;
+}
+
+/* Styles for desktop */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    nav img {
+        margin-top: 10px;
+        padding-right: 30px;
+        border-right: 2px solid black;
+        
+    }
+}
+
+/* Styles for mobile */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    nav img {
+        margin-top: 5px; /* Adjust this value as needed */
+        padding-right: 10px; /* Adjust this value as needed */
+        border-right: none; /* Remove the border on mobile */
+    }
+}
+
+
+
+/* Default styles for both mobile and desktop */
+nav .logo {
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+/* Media query for mobile screens (up to 767px wide) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    nav .logo {
+        padding-left: 10px; /* Adjust the padding for mobile screens */
+    }
+}
+
+/* Media query for desktop screens (768px wide and above) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    nav .logo {
+        padding-left: 70px; /* Use the original padding for desktop screens */
+        margin-right: 80px;
+    }
+}
+
+
+/* Default styles for both mobile and desktop */
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    nav {
+        /* Adjust styles for mobile */
+        height: auto; /* Change to auto to allow the content to determine the height */
+        flex-direction: column; /* Stack items vertically for mobile */
+        text-align: center; /* Center the text for mobile */
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (typical for desktop) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    nav {
+        /* Adjust styles for desktop */
+        height: 60px; /* Reset the height */
+        flex-direction: row; /* Display items in a row for desktop */
+        text-align: left; /* Align text to the left for desktop */
+    }
+}
+
+
+.navleft {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 22px;
+}
+
+/* Media query for screens smaller than 768px (typical for mobile) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .navleft {
+        display: flex;
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+/* Media query for screens larger than 768px (typical for desktop) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navleft {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-left: 22px;
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.navleft h3 {
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .navleft h3 {
+        font-size: 14px; /* Adjust the font size for mobile */
+    }
+}
+
+/* Media query for desktop devices */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navleft h3 {
+        font-size: 16px; /* Keep the font size the same for desktop */
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.navleft h3 {
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Media query for mobile screens (up to 768px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .navleft h3 {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+}
+
+/* Media query for larger screens (desktop) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .navleft h3 {
+        font-size: 18px; /* Adjust font size for desktop */
+    }
+}
+
+
+/* Default styles for both mobile and desktop */
+.navleft p {
+    font-weight: 100;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Media query for mobile devices (up to 768px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .navleft p {
+        font-size: 12px; /* Adjust the font size for mobile */
+    }
+}
+
+/* Media query for desktop devices (min-width 769px) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navleft p {
+        font-size: 14px; /* Adjust the font size for desktop */
+    }
+}
+/* Base styles for non-hover state */
+.navleft h3 {
+    border-bottom: 2px solid transparent; /* Transparent border by default */
+}
+
+/* Add a border on hover for all devices */
+.navleft h3:hover {
+    border-bottom: 2px solid black;
+}
+
+/* Media query for mobile devices (adjust the max-width as needed) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .navleft h3 {
+        /* Adjust styles for mobile devices */
+        font-size: 16px; /* For example, change the font size */
+    }
+}
+
+/* Media query for desktop devices (adjust the min-width as needed) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navleft h3 {
+        /* Adjust styles for desktop devices */
+        font-size: 20px; /* For example, change the font size */
+    }
+}
+/* Default style for both mobile and desktop */
+.navleft p:hover {
+    border-bottom: 2px solid black;
+}
+
+/* Media query for desktop screens (e.g., screens wider than 768px) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navleft p:hover {
+        /* Adjust the desktop styles here */
+        border-bottom: 2px solid red; /* Change to the desired desktop style */
+    }
+}
+
+/* Media query for mobile screens (e.g., screens up to 768px wide) */
+@media screen and (min-width: 200px) and (max-width: 767px)  {
+    .navleft p:hover {
+        /* Adjust the mobile styles here */
+        border-bottom: 2px solid blue; /* Change to the desired mobile style */
+    }
+}
+
+
+
+.navright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-left: 510px;
+    margin-left: 50px;
+}
+
+/* Media Query for Mobile */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .navright {
+        padding-left: 2px; /* Adjust the padding for mobile screens */
+        flex-direction: flex; /* Stack items vertically on mobile */
+        align-items: flex; /* Align items to the left on mobile */
+    }
+}
+
+  
+
+.navright p {
+    font-weight: 100;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .navright p {
+        font-size: 12px;
+        display: flex; /* Adjust the font size for mobile devices */
+    }
+}
+
+/* Media Query for Desktop Devices */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .navright p {
+        font-size: 13px; /* Set the font size back to its original value for desktop devices */
+    }
+}
+
+/* Default style for all screen sizes */
+.navright p:hover {
+    border-bottom: 2px solid black;
+}
+
+/* Media query for mobile devices (adjust max-width as needed) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .navright p:hover {
+        /* Adjust the styles for mobile here */
+        border-bottom: 2px solid red; /* Example: Change the border color for mobile */
+    }
+}
+
+/* Media query for desktop devices (adjust min-width as needed) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navright p:hover {
+        /* Adjust the styles for desktop here */
+        border-bottom: 2px solid black; /* Example: Keep the original border color for desktop */
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.navright i {
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .navright i {
+        font-size: 1rem;
+        display: inline-flex; /* Adjust this value for mobile */
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navright i {
+        font-size: 1.3rem; /* Adjust this value for desktop */
+    }
+}
+
+
+.main2 {
+    position: relative;
+}
+
+/* Mobile Styles */
+@media screen and (min-width: 200px) and (max-width: 767px){
+    .main2 {
+        position: relative;
+        width: fit-content;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .main2 {
+        /* Add desktop-specific styles here */
+        position: relative;
+    }
+}
+
+
+.background {
+    height: 500px;
+    width: 100%;
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Blade001_Area_Heading-VP5_Desktop_1920x720?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1920&qlt=75&fit=constrain);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .background {
+        height: 380px; /* Adjust the height for mobile devices */
+        margin-bottom: 20px;
+        margin-left: -1.5px;
+    }
+}
+
+/* Media Query for Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .background {
+        height: 400px; /* Adjust the height for tablets */
+        padding-left: 10px;
+    }
+}
+
+
+.background p {
+    position: absolute;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 30px;
+    width: 45%;
+    top: 20%;
+    right: 90px;
+    
+}
+
+/* Mobile Styles */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .background p {
+        width: 90%; /* Adjust the width for mobile devices */
+        top: 10%; /* Adjust the top position for mobile devices */
+        right: 0; /* Adjust the right position for mobile devices */
+        padding-left: 20px;
+        margin-right: 60px;
+        font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 30px;
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .background p {
+        width: 45%;
+        top: 20%;
+        right: 90px;
+    }
+}
+
+.button1 {
+    position: absolute;
+    right: 90px;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+
+}
+
+/* Media Query for Desktop */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .button1 {
+    position: absolute;
+    right: 90px;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    }
+}
+
+/* Media Query for Mobile */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .button1 {
+        position: relative; /* Removes absolute positioning on mobile */
+        margin: 10px auto; /* Center the button horizontally on mobile */
+        margin-left: 100px;
+        margin-top: 160px;
+        width: 100%; /* Adjust the width for better mobile display */
+        text-align: center; /* Center the text on mobile */
+       display: block;
+       padding-right: 30px;
+       margin: 80px;
+       margin-bottom: -80px;
+    }
+}
+
+
+.button1 button {
+    background-color: #006CBE;
+    color: #FFFFFF;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.button1 button:hover {
+    background-color: #0765ad;
+}
+
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+/* Media query for screens with a maximum width of 768px (typical mobile devices) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page1 {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (typical desktop and larger screens) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .page1 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    }
+}
+
+
+#h21 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    /* Styles for screens with a maximum width of 768px (e.g., mobile) */
+    #h21 {
+        font-size: 22px; /* Adjust the font size for mobile */
+        margin-bottom: 30px; /* Adjust the margin for mobile */
+        padding-bottom: 20px;
+        margin-top: -20px;
+    }
+}
+.side1 {
+    width: 100%; /* Full width on mobile */
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Adjust the padding to your preference */
+    border-right: 1px solid #D2D2D2;
+   
+}
+
+/* Media query for screens wider than a specified width (e.g., 768px) */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .side1 {
+        width: 50%; /* 50% width on screens wider than 768px */
+        padding: 0px 70px;
+        margin-left: 20px;
+    }
+}
+
+
+/* Default styles for desktop */
+.side1 h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .side1 h1 {
+        font-size: 1.2rem; /* Adjust the font size for mobile */
+        margin-bottom: 5px; /* Adjust the margin for mobile */
+    }
+}
+
+
+/* Base styles for both mobile and desktop */
+.side1 p {
+    font-weight: 400;
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media screen and (min-width: 200px) and (max-width: 767px){
+    .side1 p {
+        font-size: 14px; /* Adjust the font size for mobile */
+        margin-bottom: 15px; /* Adjust the margin for mobile */
+    }
+}
+
+/* Media query for screens larger than 768px (typical desktop screens) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .side1 p {
+        font-size: 16px; /* Adjust the font size for desktop */
+        margin-bottom: 25px; /* Reset margin for desktop if needed */
+    }
+}
+
+
+/* Default styles for desktop */
+.side1 img {
+    width: 715px;
+    height: 905px;
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .side1 img {
+        width: 80%; /* Make the image take the full width of its container */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    }
+}
+
+
+.info {
+    display: flex;
+    justify-content: center; /* Center horizontally for both mobile and desktop */
+    align-items: center;
+}
+
+/* Media query for mobile devices (up to 767px wide) */
+@media screen and (min-width: 200px) and (max-width: 767px){
+    .info {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        text-align: center; /* Center text on mobile */
+    }
+}
+
+/* Media query for desktop devices (768px wide and above) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .info {
+        flex-direction: row; /* Display elements in a row on desktop */
+    }
+}
+
+
+.info h3{
+    color: #006CBE;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: -330px;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .info h3 {
+        font-size: 14px; /* Adjust the font size for mobile */
+        margin-left: -15px; /* Adjust the margin for mobile */
+    }
+}
+
+/* Media Query for Desktop Devices */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .info h3 {
+        /* You can add additional styles specific to desktop here if needed */
+     color: #006CBE;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+    }
+}
+
+
+/* Default styles for all screen sizes */
+.info h3:nth-child(1):hover {
+    border-bottom: 1px solid #006CBE;
+}
+
+/* Media query for mobile devices (e.g., screens with a maximum width of 768px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .info h3:nth-child(1):hover {
+        /* Mobile-specific styles */
+        border-bottom: 2px solid #006CBE; /* You can adjust the styles for mobile devices here */
+    }
+}
+
+/* Media query for desktop devices (e.g., screens with a minimum width of 769px) */
+@media screen and (min-width: 768px) and (max-width: 992px)  {
+    .info h3:nth-child(1):hover {
+        /* Desktop-specific styles */
+        border-bottom: 1px solid #006CBE; /* You can adjust the styles for desktop devices here */
+    }
+}
+
+
+.side2 {
+    width: 100%; /* By default, take full width on mobile */
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px; /* Reduce padding on mobile for better spacing */
+}
+
+/* Media query for desktop screens */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .side2 {
+        width: 50%; /* Take 50% width on screens wider than 768px */
+        padding: 0px 50px; /* Increase padding for better spacing on desktop */
+    }
+}
+
+
+
+.card1 {
+    display: flex;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+/* Media query for screens with a maximum width of 768px (typical mobile devices) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .card1 {
+        flex-direction: column; /* Stack elements vertically for mobile */
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.card2 {
+    display: flex;
+    margin-top: 30px;
+}
+
+/* Media query for mobile devices with a maximum width of 768px */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .card2 {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+}
+
+/* Media query for desktop devices with a minimum width of 769px */
+@media screen and (min-width: 768px) and (max-width: 992px)  {
+    .card2 {
+        flex-direction: row; /* Arrange items horizontally on larger screens */
+    }
+}
+
+
+/* Desktop styles */
+.right1 {
+    width: 50%;
+    margin-right: 30px;
+}
+
+/* Mobile styles (adjust as needed) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .right1 {
+        width: 100%; /* Full width on mobile */
+        margin-right: 0; /* No right margin on mobile */
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.right1 h1 {
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+/* Media query for mobile devices with a maximum width of 768px */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .right1 h1 {
+        font-size: 1rem; /* Adjust the font size for mobile */
+    }
+}
+
+/* Media query for desktop devices with a minimum width of 769px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .right1 h1 {
+        font-size: 1.3rem; /* Adjust the font size for desktop */
+    }
+}
+
+
+/* Default styles for all screen sizes */
+.right1 p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Media query for mobile devices (less than 768px wide) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .right1 p {
+        font-size: 12px; /* Adjust the font size for mobile */
+        margin-bottom: 15px; /* Adjust the margin for mobile */
+    }
+}
+
+/* Media query for larger screens (desktop, tablets, etc.) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .right1 p {
+        font-size: 14px; /* Reset the font size for larger screens */
+        margin-bottom: 20px; /* Reset the margin for larger screens */
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.right2 {
+    width: 100%; /* Take up the full width by default */
+    position: relative;
+}
+
+/* Media query for desktop screens (min-width: 768px) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .right2 {
+        width: 100%; /* Set the width to 50% on desktop screens */
+    }
+}
+
+
+/* Default styles for both mobile and desktop */
+.info1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Media query for mobile devices with a maximum width of 768px */
+@media screen and (min-width: 200px) and (max-width: 767px){
+    .info1 {
+        /* Adjust styles for mobile */
+        align-items: center; /* Center items on mobile */
+    }
+}
+
+/* Media query for desktop devices with a minimum width of 769px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .info1 {
+        /* Adjust styles for desktop */
+        align-items: flex-start; /* Reset alignment for desktop */
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.info1 h3 {
+    color: #006CBE;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .info1 h3 {
+        font-size: 14px; /* Adjust font size for mobile */
+        margin-bottom: 20px; /* Adjust margin for mobile */
+    }
+}
+
+/* Media query for desktop devices */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .info1 h3 {
+        font-size: 18px; /* Adjust font size for desktop */
+        margin-bottom: 40px; /* Adjust margin for desktop */
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.info1 h3:nth-child(1):hover {
+    border-bottom: 1px solid #006CBE;
+}
+
+/* Media query for mobile devices (up to 767px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .info1 h3:nth-child(1):hover {
+        /* Adjust styles for mobile here */
+        /* For example, you can increase the border width or change the color */
+        border-bottom: 2px solid #FF5733; /* Example styles for mobile */
+    }
+}
+
+/* Media query for desktop devices (768px and above) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .info1 h3:nth-child(1):hover {
+        /* Adjust styles for desktop here */
+        /* For example, you can make the border thicker or change the color */
+        border-bottom: 3px solid #00AEEF; /* Example styles for desktop */
+    }
+}
+
+
+.right2 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .right2 img {
+        width: 100%; /* Adjust the width as needed for mobile */
+        max-height: 200px; /* Set a maximum height for mobile, adjust as needed */
+    }
+}
+
+/* Additional media query for screens with a minimum width of 769px (typical for desktop) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .right2 img {
+        width: 100%; /* Adjust the width as needed for desktop */
+        max-height: 400px; /* Set a maximum height for desktop, adjust as needed */
+    }
+}
+
+
+.nextpg {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px; /* Adjust the padding for mobile */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 0; /* Adjust the margin for mobile */
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Desktop styles */
+    .nextpg {
+        padding: 0 50px; /* Restore the padding for desktop */
+        margin: 60px 0; /* Restore the margin for desktop */
+    }
+}
+
+
+/* Base styles for both mobile and desktop */
+.nextpg h3 {
+    cursor: pointer;
+}
+
+/* Styles for mobile devices (up to 768px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .nextpg h3:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Styles for desktop devices (min-width: 769px) */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .nextpg h3:hover {
+        text-decoration: none; /* Change text decoration for desktop */
+        /* You can add more desktop-specific styles here if needed */
+    }
+}
+
+
+.nextpg h4 {
+    font-size: 5rem;
+    font-weight: lighter;
+    padding: 0px 10px;
+}
+
+/* Mobile Responsive */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .nextpg h4 {
+        font-size: 3rem; /* Adjust the font size for mobile devices */
+        padding: 0px 5px; /* Adjust the padding for mobile devices */
+    }
+}
+
+/* Desktop Responsive */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .nextpg h4 {
+        font-size: 5rem; /* Revert to the original font size for desktop */
+        padding: 0px 10px; /* Revert to the original padding for desktop */
+    }
+}
+
+
+.nextpg .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e2e270;
+    width: 85%;
+}
+
+/* Mobile Devices (up to 768px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .nextpg .center {
+        width: 100%; /* Take up the full width on smaller screens */
+    }
+}
+
+/* Desktop and Larger Screens (769px and above) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .nextpg .center {
+        width: 85%; /* Restore the original width for desktop screens */
+    }
+}
+
+
+.center .imgou {
+    position: absolute;
+    left: 170px;
+    top: 50px;
+}
+
+/* Mobile Responsive */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .center .imgou {
+        left: 20px; /* Adjust this value for mobile */
+        top: 20px; /* Adjust this value for mobile */
+        right: 20px;
+        margin-left: 30px;
+        
+    }
+}
+
+/* Desktop Responsive */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .center .imgou {
+        left: 170px; /* Reset the value for desktop */
+        top: 50px;  /* Reset the value for desktop */
+    }
+}
+
+.infoy {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile Responsive */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .infoy {
+        flex-direction: row; /* Change to row layout for mobile */
+    }
+}
+
+/* Desktop Responsive (optional) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .infoy {
+        flex-direction: column; /* Change back to column layout for desktop */
+    }
+}
+
+
+/* Base styles for both mobile and desktop */
+.infoy h3 {
+    color: #006CBE;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+/* Media query for mobile devices (e.g., up to 768px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .infoy h3 {
+        font-size: 10px; /* Adjust font size for mobile */
+        margin-top: 50px;
+    }
+}
+
+/* Media query for larger screens (e.g., desktop) */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .infoy h3 {
+        font-size: 18px; /* Adjust font size for desktop */
+    }
+}
+
+
+.infoy h2 {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .infoy h2 {
+        font-size: 10px; /* Adjust font size for mobile */
+        margin-top: 20px; /* Adjust margin-top for mobile */
+        margin-bottom: 15px; /* Adjust margin-bottom for mobile */
+        margin-right: -100px;
+        font-style: italic;
+    }
+}
+
+/* Media Query for Desktop Devices */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .infoy h2 {
+        font-size: 1.5rem; /* Reset font size for desktop */
+        margin-top: 50px; /* Reset margin-top for desktop */
+        margin-bottom: 20px; /* Reset margin-bottom for desktop */
+    }
+}
+
+
+.page2 {
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+/* Media Query for Desktop Screens */
+@media  screen and (min-width: 768px) and (max-width: 992px){
+    .page2 {
+        width: 100%; /* Adjust the width for desktop screens */
+        
+    }
+}
+
+/* Media Query for Mobile Screens */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page2 {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items vertically on mobile */
+        margin-top: 50px; /* Adjust margin on mobile */
+    }
+}
+#h22{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-bottom: -50px;
+}
+@media screen and (min-width: 200px) and (max-width: 767px){
+    #h22{
+        font-size: 22px;
+        margin-left: 10px;
+        margin-bottom: -20px;
+    }
+}
+
+
+/* Base styles for all screen sizes */
+.page2 .half1 {
+    width: 100%; /* Take up full width on small screens */
+    margin: 0;   /* No margin on small screens */
+}
+
+/* Media query for screens with a minimum width of 768px (typical for tablets and desktops) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .page2 .half1 {
+        width: 50%;       /* Half width on larger screens */
+        margin-left: 140px; /* Apply the left margin as you intended */
+    }
+}
+
+
+.half1 .menu1 {
+    height: 200px;
+    width: 100%; /* Use 100% width on mobile */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 0px 40px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+}
+
+/* Media Query for Desktop */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .half1 .menu1 {
+        width: 72%; /* Adjust the width for desktop */
+        
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.menu1 .icon1 {
+    display: flex;
+    margin-bottom: 20px; /* Reduce margin for mobile */
+    cursor: pointer;
+}
+
+/* Media query for mobile devices (up to 768px wide) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .menu1 .icon1 {
+        margin-bottom: 10px; /* Further reduce margin for smaller screens */
+    }
+}
+
+/* Media query for desktop devices (769px wide and above) */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .menu1 .icon1 {
+        margin-bottom: 40px; /* Restore original margin for desktop */
+    }
+}
+
+
+/* Default styles for both mobile and desktop */
+.menu1 .icon1 h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Media query for mobile devices (up to 767px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .menu1 .icon1 h3 {
+        font-size: 14px; /* Adjust font size for mobile */
+        margin-left: 5px; /* Adjust margin for mobile */
+    }
+}
+
+/* Media query for larger screens (desktop, tablets, etc.) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .menu1 .icon1 h3 {
+        font-size: 16px; /* You can leave the font size as it is for larger screens */
+        margin-left: 10px; /* You can leave the margin as it is for larger screens */
+    }
+}
+
+/* Default styles for both mobile and desktop */
+.menu1 p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Media query for mobile devices with a max width of 768px */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .menu1 p {
+        font-size: 12px; /* Adjust the font size for mobile */
+        font-weight: 400; /* Adjust the font weight for mobile */
+    }
+}
+
+/* Media query for desktop devices with a min width of 769px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .menu1 p {
+        font-size: 16px; /* Adjust the font size for desktop */
+        font-weight: 600; /* Adjust the font weight for desktop */
+    }
+}
+
+
+/* Default styles for the image */
+.icon1 img {
+    width: 30px;
+}
+
+/* Media query for mobile devices (up to 767px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .icon1 img {
+        width: 20px; /* Adjust the width for mobile */
+    }
+}
+
+/* Media query for larger screens (desktop) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .icon1 img {
+        width: 30px; /* Reset the width for desktop */
+    }
+}
+
+
+/* menu 2 */
+/* Base styles for desktop */
+.half1 .menu2 {
+    height: 100px;
+    width: 72%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 0px 40px;
+    border-bottom: 1px solid #D2D2D2;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .half1 .menu2 {
+        width: 100%;  /* Make it full width on smaller screens */
+        padding: 20px; /* Adjust padding for mobile */
+    }
+}
+
+
+/* Default styles for both mobile and desktop */
+.menu2 {
+    /* Add your default styles here */
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.082);
+}
+
+/* Styles for mobile devices (max-width: 768px) */
+@media screen and (min-width: 200px) and (max-width: 767px){
+    .menu2:hover {
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.082);
+    }
+}
+
+/* Styles for desktop devices (min-width: 769px) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .menu2:hover {
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1); /* Modify shadow values for desktop */
+    }
+}
+
+
+/* Default styles for both mobile and desktop */
+.menu2 .icon2 {
+    display: flex;
+    cursor: pointer;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .menu2 .icon2 {
+        /* Mobile-specific styles go here */
+        /* For example, you can change the display to block for mobile */
+        display: block;
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (typical for desktop devices) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .menu2 .icon2 {
+        /* Desktop-specific styles go here */
+        /* For example, you can change the cursor style for desktop */
+        cursor: default;
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.menu2 .icon2 h3 {
+    font-weight: 500;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Mobile styles (up to 768px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .menu2 .icon2 h3 {
+        font-size: 14px; /* Adjust the font size for mobile */
+    }
+}
+
+/* Desktop styles (769px and above) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .menu2 .icon2 h3 {
+        font-size: 16px; /* Keep the original font size for desktop */
+    }
+}
+
+
+/* Default styles for the image */
+.icon2 img {
+    width: 30px;
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .icon2 img {
+        width: 20px; /* Adjust the width for mobile devices as needed */
+    }
+}
+
+
+/* Default styles for desktop */
+.page2 .half2 img {
+    width: 720px;
+    height: 380px;
+}
+
+/* Media query for mobile devices (adjust the max-width as needed) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page2 .half2 img {
+        width: 100%; /* Make the image 100% of the container's width */
+        height: auto; /* Allow the height to adjust proportionally */
+    }
+}
+
+/*! page 3 */
+
+/* Default styles for both mobile and desktop */
+.page3 {
+    width: 100%;
+    min-height: 125vh;
+    position: relative;
+    /* background-color: red; */
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page3 {
+        /* Adjust the styles for mobile devices */
+        min-height: 100vh; /* Decrease the height for mobile devices, adjust as needed */
+        /* Add any other mobile-specific styles here */
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (typical for desktop) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .page3 {
+        /* Adjust the styles for desktop devices */
+        min-height: 125vh; /* Restore the original height for desktop */
+        /* Add any other desktop-specific styles here */
+    }
+}
+
+
+/* Default styles for desktop */
+.page3 .plan1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query for mobile devices (adjust the max-width as needed) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page3 .plan1 {
+        flex-direction: column;
+        align-items: center;
+        /* You can add or adjust properties specific to mobile here */
+    }
+}
+
+
+/* Desktop Styles */
+.page3 .plan2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 0px 50px;
+}
+
+/* Mobile Styles */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page3 .plan2 {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;    /* Center items horizontally */
+        padding: 10px;          /* Reduce padding on smaller screens */
+    }
+}
+
+
+/* Default styles for mobile */
+.plan2 .micro-one {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Media query for desktop screens (e.g., screens wider than 768px) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .plan2 .micro-one {
+        /* Add desktop styles here */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* Default styles for desktop */
+.micro-one img {
+    width: 389px;
+    height: 311px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Media query for mobile devices (up to 768px wide) */
+@media screen and (min-width: 200px) and (max-width: 767px){
+    .micro-one img {
+        width: 100%; /* Make the image fill the width of its container */
+        height: auto; /* Maintain the aspect ratio */
+        border-radius: 0; /* Remove border-radius for mobile */
+        margin-bottom: 50px;
+        
+    }
+}
+
+
+.micro-one .div1 {
+    width: 340px;
+    height: 288px;
+    background-color: #D83B01;
+    position: absolute;
+    top: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div1 h3 {
+    height: 70px;
+    width: 100%;
+    color: white;
+    box-shadow: 0px 7px 10px 0px #00000027;
+    padding: 20px;
+    font-size: 100;
+    overflow: hidden;
+    text-align: center;
+}
+
+.div1 p {
+    color: white;
+}
+
+.div1 button {
+    width: 70%;
+    height: 40px;
+    background-color: white;
+    color: #D83B01;
+    border-radius: 2px;
+    border: none;
+    margin: 30px 0px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.div1 button:hover {
+    background-color: rgb(218, 212, 212);
+}
+
+.div1 p:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.plan2 .micro-two {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* For mobile devices (up to a specific screen width, e.g., 768px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .plan2 .micro-two {
+      /* Adjust the styles for mobile devices */
+      /* For example, you can make it full width and centered */
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  /* For desktop devices (screen width greater than 768px) */
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    .plan2 .micro-two {
+      /* Adjust the styles for desktop devices */
+      /* You can use the original styles for desktop here */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+
+/* For desktop screens */
+.micro-two img {
+    width: 389px;
+    height: 311px;
+    border-radius: 5px;
+}
+
+/* For mobile screens */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .micro-two img {
+        width: 100%; /* Make the image fill the container */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 50px;
+        margin-top: 250px;
+    }
+}
+
+
+.micro-two .div2 {
+    width: 340px;
+    height: 288px;
+    background-color: #0078D4;
+    position: absolute;
+    top: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div2 h3 {
+    height: 70px;
+    width: 100%;
+    color: white;
+    box-shadow: 0px 7px 10px 0px #00000027;
+    padding: 20px;
+    font-size: 100;
+    overflow: hidden;
+    text-align: center;
+}
+
+.div2 p {
+    color: white;
+}
+
+.div2 button {
+    width: 70%;
+    height: 40px;
+    background-color: white;
+    color: #0078D4;
+    border-radius: 2px;
+    border: none;
+    margin: 20px 0px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.div2 button:hover {
+    background-color: rgb(218, 212, 212);
+}
+
+.div2 p:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.plan2 .micro-three {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .plan2 .micro-three {
+        /* Mobile-specific styles here */
+        flex-direction: row; /* Change direction to horizontal for mobile */
+    }
+}
+
+/* Desktop Responsiveness */
+@media (min-width: 769px) {
+    .plan2 .micro-three {
+        /* Desktop-specific styles here */
+        position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+/* Default styles for desktop */
+.micro-three img {
+    width: 389px;
+    height: 311px;
+    border-radius: 5px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .micro-three img {
+        width: 100%; /* Make the image take the full width of its container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 0; /* Remove border-radius for mobile */
+        margin-top: 250px;
+        
+    }
+}
+
+
+.micro-three .div3 {
+    width: 340px;
+    height: 288px;
+    background-color: #7719AA;
+    position: absolute;
+    top: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div3 h3 {
+    height: 70px;
+    width: 100%;
+    color: white;
+    box-shadow: 0px 7px 10px 0px #00000027;
+    padding: 20px;
+    font-size: 100;
+    overflow: hidden;
+    text-align: center;
+}
+
+.div3 p {
+    color: white;
+}
+
+.div3 button {
+    width: 70%;
+    height: 40px;
+    background-color: white;
+    color: #7719AA;
+    border-radius: 2px;
+    border: none;
+    margin: 30px 0px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.div3 button:hover {
+    background-color: rgb(218, 212, 212);
+}
+
+.div3 p:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+#h23{
+    margin-left: 100px;
+}
+@media screen and (min-width: 200px) and (max-width: 767px){
+#h23{
+    margin-left: 100px;
+}
+}
+
+@media screen and (min-width: 200px) and (max-width: 767px){
+#h23{
+    margin-top: 200px;
+    justify-content: left;
+    margin-left: 20px;
+}
+}
+
+.page4 {
+    margin-top: 50px;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    padding: 0px 110px;
+}
+
+/* Mobile Styles */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page4 {
+        padding: 0px 20px; /* Adjust the padding for mobile */
+        margin-top: 50px;
+    }
+}
+
+/* Tablet Styles (if needed) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .page4 {
+        padding: 0px 40px; /* Adjust the padding for tablets */
+    }
+}
+
+
+/* Default styles for both mobile and desktop */
+.card-info span {
+    color: #0078D4;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Media query for mobile devices (up to 767px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .card-info span {
+        /* Adjust styles for mobile here */
+        font-size: 16px;
+    }
+}
+
+/* Media query for desktop devices (768px and above) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .card-info span {
+        /* Adjust styles for desktop here */
+        font-size: 18px;
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.card-info h3 {
+    margin-bottom: 10px;
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 200px) and (max-width: 767px)  {
+    .card-info h3 {
+        /* Adjust the margin or other styles for mobile */
+        margin-bottom: 5px;
+    }
+}
+
+/* Media query for desktop devices */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .card-info h3 {
+        /* Adjust the margin or other styles for desktop */
+        margin-bottom: 10px;
+    }
+}
+
+
+.card-info p {
+    font-size: 15px;
+}
+
+/* Media query for mobile devices */
+@media  screen and (min-width: 200px) and (max-width: 767px) {
+    .card-info p {
+        font-size: 14px; /* Adjust the font size for mobile screens */
+    }
+}
+
+
+.page4 .next-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Media Query for Mobile */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page4 .next-card {
+        flex-direction: column;  /* Stack items vertically on small screens */
+        align-items: center;
+    }
+}
+
+
+.next-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .next-card img {
+        width: 100%; /* Adjust to your preferred width for mobile */
+        height: auto; /* Let the aspect ratio be maintained */
+    }
+}
+
+/* Media query for desktop devices */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .next-card img {
+        width: 607px; /* Adjust to your preferred width for desktop */
+        height: 432px; /* Adjust to your preferred height for desktop */
+    }
+}
+
+
+/* page 5 */
+.page5 {
+    height: 100vh;
+    width: 90%;
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Collaborate-v2-1600x720-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=720&qlt=75);
+    background-size: cover;
+    position: relative;
+    left: 50px;
+    margin-bottom: 50px;
+}
+
+/* Media query for screens smaller than 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    .page5 {
+        width: 100%; /* Make it full width on small screens */
+        left: 0; /* Reset the left positioning */
+    }
+}
+
+
+
+.content {
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .content {
+        margin-bottom: 30px; /* Adjust as needed for mobile layout */
+        margin-top: -440px;
+    }
+}
+
+/* Media Query for Desktop Devices */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .content {
+        margin-bottom: 70px; /* Keep the original margin for desktop layout */
+    }
+}
+
+
+/* Base styles for both mobile and desktop */
+.content p {
+    text-align: center;
+}
+
+/* Responsive styles for mobile */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .content p {
+        width: 100%; /* Full width on mobile */
+    }
+}
+
+/* Responsive styles for desktop */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .content p {
+        width: 45%; /* 45% width on desktop */
+    }
+}
+
+
+#h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Mobile Styles */
+@media screen and (min-width: 200px) and (max-width: 767px){
+    #h3 {
+        font-size: 16px; /* Adjust font size for mobile devices */
+        margin-bottom: 50px; /* Adjust margin for mobile devices */
+        
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    #h3 {
+        font-size: 24px; /* Adjust font size for desktop devices */
+        margin-bottom: 15px; /* Adjust margin for desktop devices */
+    }
+}
+
+.card-info .creative1 {
+    width: 100%; /* Full width on all screens */
+    max-width: 607px; /* Maximum width for desktop */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    position: relative;
+}
+
+/* Media query for mobile screens */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .card-info .creative1 {
+        max-width: 100%; /* Full width on mobile screens */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    }
+}
+
+
+/* Desktop Styles */
+.creative1 img {
+    width: 607px;
+    height: 340px;
+    margin-left: 70px;
+    position: relative;
+    right: -25px;
+}
+
+/* Mobile Styles */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .creative1 img {
+        width: 100%; /* Make the image width 100% of the container */
+        height: auto; /* Let the height adjust proportionally */
+        margin-left: 0; /* Reset the left margin */
+        right: 0; /* Reset the right position */
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.content span {
+    color: #0078D4;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Media query for mobile devices (up to 768px wide) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .content span {
+        font-size: 16px; /* Adjust the font size for mobile */
+    }
+}
+
+/* Media query for desktop devices (greater than 768px wide) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .content span {
+        font-size: 18px; /* Adjust the font size for desktop */
+    }
+}
+
+
+/* Default styles for both mobile and desktop */
+.card-info1 span {
+    color: #0078D4;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .card-info1 span {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (typical for desktop) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .card-info1 span {
+        font-size: 16px; /* Adjust font size for desktop */
+    }
+}
+
+
+.card-info1 h3 {
+    margin-bottom: 10px;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .card-info1 h3 {
+        margin-bottom: 5px; /* Adjust the margin for mobile devices */
+        margin-top: 100px;
+        
+    }
+}
+
+
+/* Default styles for all screen sizes */
+.card-info1 p {
+    font-size: 15px;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (min-width: 200px) and (max-width: 767px){
+    .card-info1 p {
+        font-size: 14px; /* Adjust the font size for mobile screens */
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (typical for desktop) */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .card-info1 p {
+        font-size: 16px; /* Adjust the font size for desktop screens */
+    }
+}
+
+
+/* Default styles for desktop */
+.page7 > h2 {
+    width: 50%;
+    margin-left: 350px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+/* Responsive styles for mobile */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page7 > h2 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 10px;
+        font-size: 22px;
+        margin-top: -40px;
+        margin-top: 100px;
+    }
+}
+
+.img-bundle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .img-bundle {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center; /* Center-align text within each element */
+        gap: 20px; /* Reduce the gap between elements on smaller screens */
+    }
+}
+
+
+/* Default styles for all screen sizes */
+.img-bundle img:nth-child(1) {
+    border: 3px solid #0b6fbb;
+    border-radius: 5px;
+}
+
+/* Media query for mobile devices (up to 767px width) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .img-bundle img:nth-child(1) {
+        /* Adjust styles for mobile */
+        border-width: 2px;
+    }
+}
+
+/* Media query for desktop devices (768px width and above) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .img-bundle img:nth-child(1) {
+        /* Adjust styles for desktop */
+        border-width: 3px;
+        border-radius: 5px;
+    }
+}
+
+
+/* Base styles for image bundle */
+.img-bundle img {
+    border: 3px solid transparent;
+    border-radius: 5px;
+}
+
+/* Styles for image on hover (desktop) */
+.img-bundle img:hover {
+    border: 3px solid #272b2e62;
+    border-radius: 5px;
+}
+
+/* Media Query for Mobile */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .img-bundle img:hover {
+        border: 3px solid transparent; /* Remove the hover effect on mobile */
+    }
+}
+
+
+
+.page8 {
+    height: 80vh;
+    width: 100%; /* Change the width to 100% for responsiveness */
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/clifton-coffee-roasters-banner:VP4-1399x726?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=75);
+    background-size: cover;
+    margin: 50px 0;
+    position: relative;
+}
+
+/* Add media queries for responsive design */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page8 {
+        height: 60vh; /* Adjust the height for smaller screens */
+        margin: 20px 0; /* Adjust the margin for smaller screens */
+    }
+}
+
+
+.bigbox {
+    background-color: white;
+    width: 90%; /* Adjust the width for mobile screens */
+    max-width: 600px; /* Set a maximum width for larger screens */
+    height: 280px;
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    padding: 20px; /* Reduce padding for mobile screens */
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .bigbox {
+        width: 95%; /* Adjust the width for smaller mobile screens */
+        padding: 10px; /* Further reduce padding for smaller screens */
+        margin-left: -10px;
+    }
+}
+
+
+/* Default styles for .micro-info */
+.micro-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .micro-info {
+        /* Adjust the styles for smaller screens (e.g., mobile) */
+        flex-direction: column; /* You can customize this further for mobile */
+    }
+}
+
+/* Responsive styles for desktop devices (optional) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .micro-info {
+        /* Adjust the styles for larger screens (e.g., desktop) */
+        flex-direction: row; /* You can customize this for desktop */
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.micro-info h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Mobile styles */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .micro-info h2 {
+        font-size: 16px; /* Adjust the font size for mobile */
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .micro-info h2 {
+        font-size: 18px; /* Reset the font size for desktop */
+    }
+}
+
+
+/* Default styles for both mobile and desktop */
+.micro-info p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Media query for mobile devices (e.g., screens up to 767px wide) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .micro-info p {
+        font-size: 14px; /* Adjust the font size for mobile */
+        margin-bottom: 8px; /* Adjust the margin for mobile */
+    }
+}
+
+/* Media query for larger screens (e.g., desktops) */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .micro-info p {
+        font-size: 16px; /* Adjust the font size for desktop */
+        margin-bottom: 12px; /* Adjust the margin for desktop */
+    }
+}
+
+
+/* Default styles for desktop */
+.micro-info h3 {
+    font-size: 16px; /* Adjust the font size for desktop */
+    font-weight: 600;
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .micro-info h3 {
+        font-size: 14px; /* Adjust the font size for mobile */
+    }
+}
+
+
+/* Default styles for .micro-btn */
+.micro-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Media query for mobile devices (up to 768px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .micro-btn {
+        /* Adjust styles for mobile here */
+        margin-top: 10px; /* Example: Reduce top margin for mobile */
+        width: 60%;
+    }
+}
+
+/* Media query for desktop devices (769px and above) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .micro-btn {
+        /* Adjust styles for desktop here */
+        margin-top: 20px; /* Example: Keep top margin as it is for desktop */
+    }
+}
+
+
+/* Base styles for the button */
+.micro-btn button {
+    background-color: #0078D4;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .micro-btn button {
+        width: 100%; /* Make the button expand to 100% width on smaller screens */
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 10px; /* Add some bottom margin for spacing */
+    }
+}
+
+
+/* Default styles for the button */
+.micro-btn button {
+    background-color: #0575ca;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for desktop */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .micro-btn button:hover {
+        background-color: #0575cad7;
+    }
+}
+
+/* Mobile styles */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .micro-btn button:hover {
+        background-color: #0575cad7;
+    }
+}
+
+
+/* Default styles for both mobile and desktop */
+.micro-btn p {
+    color: #006CBE;
+    margin-top: 10px;
+}
+
+/* Media query for mobile devices (up to 767px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .micro-btn p {
+        /* Adjust the styles for mobile */
+        font-size: 16px; /* You can adjust the font size as needed */
+        margin-top: 5px; /* You can adjust the margin as needed */
+        padding-left: 30px;
+    }
+}
+
+/* Media query for desktop devices (768px and above) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .micro-btn p {
+        /* Adjust the styles for desktop */
+        font-size: 18px; /* You can adjust the font size as needed */
+        margin-top: 10px; /* You can adjust the margin as needed */
+    }
+}
+
+
+/* Default styles for both mobile and desktop */
+.micro-btn p {
+    text-decoration: none; /* Remove the underline by default */
+}
+
+/* Hover effect for both mobile and desktop */
+.micro-btn p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Media query for mobile devices (up to 767px width) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .micro-btn p {
+        /* Adjust styles for mobile devices here */
+        font-size: 16px; /* You can change the font size, for example */
+    }
+}
+
+/* Media query for desktop devices (min-width 768px) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .micro-btn p {
+        /* Adjust styles for desktop devices here */
+        font-size: 18px; /* You can change the font size, for example */
+    }
+}
+
+
+/* page 9 */
+
+.page9 {
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(120deg, #ECF5FE, #FFF5F6);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.137);
+}
+
+/* Media Query for Mobile */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page9 {
+        height: 20vh; /* Adjust the height for mobile devices */
+    }
+}
+
+/* Media Query for Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .page9 {
+        height: 25vh; /* Adjust the height for tablets */
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.page9 h2 {
+    text-align: center;
+    font-weight: 500;
+    padding-top: 40px;
+}
+
+/* Mobile responsive styles (adjust as needed) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page9 h2 {
+        font-size: 24px; /* Adjust the font size for mobile */
+        padding-top: 20px; /* Adjust the padding for mobile */
+    }
+}
+
+/* Desktop responsive styles (adjust as needed) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .page9 h2 {
+        font-size: 36px; /* Adjust the font size for desktop */
+        padding-top: 40px; /* Adjust the padding for desktop */
+    }
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn button {
+    background-color: #0078D4;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 30px;
+    margin-left: 20px;
+
+}
+
+.btn button:hover {
+    background-color: #0575cad7;
+    cursor: pointer;
+}
+
+
+
+/* Common styles for both mobile and desktop */
+.pag10 {
+    width: 100%;
+    height: 30vh;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (min-width: 200px) and (max-width: 767px){
+    .pag10 {
+        /* Adjust the height for mobile screens if needed */
+        height: 20vh;
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (typical for desktops) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .pag10 {
+        /* Adjust the height for desktop screens if needed */
+        height: 30vh;
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.page10 p {
+    margin: 20px 0; /* Reduce the top and bottom margin */
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page10 p {
+        padding: 0 20px; /* Reduce horizontal padding for mobile */
+    }
+}
+
+/* Media query for desktop devices */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .page10 p {
+        padding: 0 100px; /* Restore the original horizontal padding for desktop */
+        margin: 70px 0; /* Restore the original margin for desktop */
+    }
+}
+
+
+/* Common styles for both mobile and desktop */
+.page10 i {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 0px 5px;
+}
+
+/* Responsive styles for mobile devices (up to 767px) */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .page10 i {
+        font-size: 1.2rem;
+        margin: 0px 3px;
+    }
+}
+
+/* Responsive styles for larger screens (desktop) */
+@media screen and (min-width: 768px) and (max-width: 992px)  {
+    .page10 i {
+        font-size: 1.5rem;
+        margin: 0px 5px;
+    }
+}
+
+
+/* Default styles for both mobile and desktop */
+.page10 span {
+    color: #006CBE;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (min-width: 200px) and (max-width: 767px){
+    .page10 span {
+        /* Adjust the style for mobile here */
+        /* For example, change the color to something else */
+        color: #FF5733;
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (typical for desktop devices) */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .page10 span {
+        /* Adjust the style for desktop here */
+        /* You can keep the original color or choose a different one */
+        color: #006CBE;
+    }
+}
+
+
+/* footer */
+
+/* Base styles for the footer */
+/* Base styles for desktop */
+.footer {
+    width: 100%;
+    height: 60vh;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: -90px;
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+        height: auto;
+        flex-direction: column;
+       
+    }
+}
+
+#f1,#f2,#f3,#f4,#f5,#f6{
+    padding-left: 20px;
+    padding-right: 90px;
+}
+
+
+.footer ul>li {
+    list-style: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.445);
+    line-height: 30px;
+}
+
+.footer ul>li:nth-child(1) {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.footer ul li:not(:first-child):hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
